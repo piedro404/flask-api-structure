@@ -37,6 +37,6 @@ def swagger_ui():
 
 @app_routes_bp.route('/openapi.json')
 def swagger_file():
-    # Develop your swagger for this project in the Swagger Editor and convert it to JSON
+    # Develop your swagger for this project in the Swagger Editor and convert it to JSON (https://editor.swagger.io)
     return send_from_directory(os.path.join(app_routes_bp.root_path, '../../templates/documentation'),
                           'openapi.json')
