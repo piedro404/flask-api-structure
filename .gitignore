@@ -1,5 +1,6 @@
 # .venv .env
-.*/
+.venv/
+.env/
 
 # PyCache AutoIgnore
-__pycache__
+__pycache__/
