@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/git": true,
+        "**/__pycache__": true,
+        "**/.venv": true,
+	    "**/.env": true
+        // Add more things if you want
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Flask Structure API",
+    "description": "About Repository dedicated to exemplifying and facilitating the start of Flask projects for APIs 💫. Clone and start your own developments with ease 🚀.",
+    "version": "1.0.0",
+    "contact": {
+      "email": "pedro.henrique.martins404@gmail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:3000",
+      "description": "Production Server"
+    }
+  ],
+  "paths": {
+    "/info": {
+      "get": {
+        "tags": [
+          "API"
+        ],
+        "summary": "Home 🏡",
+        "description": "Returns information about the Flask Structure API 📒️.",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "example": {
+                    "contact": {
+                      "email_academic": "pedro.borges@alu.unibalsas.edu.br",
+                      "email_personal": "pedro.henrique.martins404@gmail.com",
+                      "github": "piedro404",
+                      "linkedin": "pedrohenrique404"
+                    },
+                    "documentation": "/",
+                    "endpoints": {
+                      "docs": "/",
+                      "info": "/info"
+                    },
+                    "message": "Welcome to the Structure Flask API!",
+                    "status": true,
+                    "version": "1.0v"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
