@@ -22,3 +22,9 @@ def info():
             "linkedin": "pedrohenrique404"
         }
     }), 200
+    
+@app_routes_bp.route('/favicon.ico')
+def favicon():
+    # To change the site icon, simply change your .ico to favicon.ico in the Static folder. Remembering to rename it in the process to favicon.ico
+    return send_from_directory(os.path.join(app_routes_bp.root_path, '../../static'),
+                          'favicon.ico')
