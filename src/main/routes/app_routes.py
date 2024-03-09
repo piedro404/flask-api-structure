@@ -28,3 +28,15 @@ def favicon():
     # To change the site icon, simply change your .ico to favicon.ico in the Static folder. Remembering to rename it in the process to favicon.ico
     return send_from_directory(os.path.join(app_routes_bp.root_path, '../../static'),
                           'favicon.ico')
+
+@app_routes_bp.route('/')
+def swagger_ui():
+    # Swagger Documentation Renderer
+    return send_from_directory(os.path.join(app_routes_bp.root_path, '../../templates'),
+                          'docs.html')
+
+@app_routes_bp.route('/openapi.json')
+def swagger_file():
+    # Develop your swagger for this project in the Swagger Editor and convert it to JSON
+    return send_from_directory(os.path.join(app_routes_bp.root_path, '../../templates/documentation'),
+                          'openapi.json')
