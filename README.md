@@ -19,9 +19,9 @@ Repositório dedicado a exemplificar e facilitar o início de projetos Flask par
 - Views: Define diferentes tipos de respostas HTTP e views associadas à lógica da apresentação.
 
 # Recursos da Estrutura da API 🔨
-- Home: Dá as suas Boas-Vindas e traz informações relevantes sobre a API e Contatos.
+- Info: Dá as suas Boas-Vindas e traz informações relevantes sobre a API e Contatos.
 - Docs: Local para aprender sobre a API e como utilizar de forma interativa e dinâmica.
-- Favicon.icon: Icone para ser apresentado e visualizado na janela do Web Site.
+- Favicon.ico: Icone para ser apresentado e visualizado na janela do Web Site.
 
 # Principais Tecnologias Utilizadas 🌐
 - Flask: Framework utilizado para o desenvolvimento de aplicações web, proporcionando uma estrutura flexível e eficiente para a criação de APIs e interfaces de usuário.
